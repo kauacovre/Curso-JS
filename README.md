@@ -1,2 +1,3 @@
-# Primeiro Repositório
- Firt repository
+# Primeiro Repositório!
+ First repository
+Curso em vídeo
