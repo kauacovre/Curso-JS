@@ -1,3 +1,3 @@
 # Primeiro Repositório!
- First repository
-Curso em vídeo
+ First repository;
+ Curso em vídeo.
