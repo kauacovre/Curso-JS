@@ -38,3 +38,22 @@ addTaskBtn.addEventListener('click', () => {
         alert('Por favor, digite uma tarefa!');
     }
 });
+
+const formulario = document.getElementById('formulario');
+const nome = document.getElementById('nome');
+const email = document.getElementById('email');
+const mensagem = document.getElementById('mensagem');
+
+formulario.addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita envio real do formulário
+
+    if (nome.value.trim() === '' || email.value.trim() === '') {
+        mensagem.textContent = 'Por favor, preencha todos os campos.';
+        mensagem.classList.remove('sucesso');
+    } else {
+        mensagem.textContent = 'Formulário enviado com sucesso!';
+        mensagem.classList.add('sucesso');
+        // Aqui você pode limpar os campos, se quiser:
+        // formulario.reset();
+    }
+});
