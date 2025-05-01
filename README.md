@@ -1,6 +1,1 @@
-# Primeiro Repositório!
- First repository!
- 
- Curso em vídeo!
-
- Teste de mudança
+# This is a repository of HTML5, CSS3 and JS exercises.
