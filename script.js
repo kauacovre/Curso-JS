@@ -1,4 +1,3 @@
-// ======== CÓDIGO EXISTENTE (não alterado) ========
 // Seleciona o botão pela classe
 const button = document.querySelector('.shadow__btn');
 
@@ -18,7 +17,7 @@ button.addEventListener('click', () => {
     document.body.style.backgroundColor = novaCor;
 });
 
-// ======== NOVO CÓDIGO DO EXERCÍCIO 3 (To-do List) ========
+// CÓDIGO DO EXERCÍCIO 3 
 const addTaskBtn = document.getElementById('addTaskBtn');
 const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
@@ -39,7 +38,8 @@ addTaskBtn.addEventListener('click', () => {
     }
 });
 
-const formulario = document.getElementById('formulario');
+// CÓDIGO DO EXERCÍCIO 4
+const formulario = document.getElementById("formulario");
 const nome = document.getElementById('nome');
 const email = document.getElementById('email');
 const mensagem = document.getElementById('mensagem');
@@ -57,3 +57,27 @@ formulario.addEventListener('submit', function (e) {
         // formulario.reset();
     }
 });
+
+// CÓDIGO DO EXERCÍCIO 5
+const relogio = document.getElementById('relogio');
+const data = new Date();
+const opcoes = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const dataFormatada = data.toLocaleDateString('pt-BR', opcoes);
+
+relogio.addEventListener('click', () => {
+    const horaAtual = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    alert(`Data: ${dataFormatada}\nHora: ${horaAtual}`);
+});
+
+function atualizarRelogio() {
+    const agora = new Date();
+    const horas = String(agora.getHours()).padStart(2, '0');
+    const minutos = String(agora.getMinutes()).padStart(2, '0');
+    const segundos = String(agora.getSeconds()).padStart(2, '0');
+
+    const relogio = document.getElementById('relogio');
+    relogio.textContent = `${horas}:${minutos}:${segundos}`;
+}
+
+setInterval(atualizarRelogio, 1000);
+atualizarRelogio(); // chama imediatamente ao carregar
