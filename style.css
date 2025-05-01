@@ -3,205 +3,67 @@
     padding: 30px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
-body {
-    background-color: rgb(46, 45, 46);
-    color: white;
-    line-height: 1.6;
-}
+    body {
+        background-color: antiquewhite;
+        color: black;
+    }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-    text-align: center;
-    color: #fff;
-}
+    h1 {
+        color: darkcyan;
+        text-align: center;
+        font-size: 3em;
+    }
 
-p {
-    margin: 0;
-    font-size: 2.5em;
-    text-align: center;
-    color: #fff;
-}
+    h2 {
+        color: darkcyan;
+        font-size: 1.5em;
+    }
 
-/* From Uiverse.io by mrhyddenn */ 
-.shadow__btn {
-    padding: 10px 20px;
-    border: none;
-    font-size: 17px;
-    color: #fff;
-    border-radius: 7px;
-    letter-spacing: 4px;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: 0.5s;
-    transition-property: box-shadow;
-  }
-  
-  .shadow__btn {
-    background: rgb(0,140,255);
-    box-shadow: 0 0 25px rgb(0,140,255);
-  }
-  
-  .shadow__btn:hover {
-    box-shadow: 0 0 5px rgb(0,140,255),
-                0 0 25px rgb(0,140,255),
-                0 0 50px rgb(0,140,255),
-                0 0 100px rgb(0,140,255);
-  }
+    ul {
+        padding-left: 20px;
+        margin: 0;
+      }
+      
+      ul li {
+        line-height: 0;
+      }     
 
-  /* Center the button */
-  .container {
-    display: flex;
-    justify-content: center;   /* Centraliza horizontalmente */
-    align-items: center;       /* Alinha verticalmente (caso queira) */
-    gap: 20px;                 /* Espaço entre os botões */
-    margin-top: 40px;          /* Espaço entre o texto e os botões */
-}
-
-body {
-    background-color: #1f1f1f;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 40px;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    font-size: 16px;
-    width: 250px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    max-width: 400px;
-    margin: 30px auto;
-    text-align: left;
-  }
-  
-  li {
-    background-color: #333;
-    padding: 10px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  li button {
-    background: transparent;
-    border: none;
-    color: red;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* --- Seu botão personalizado --- */
-  .btn {
-    --color: #00A97F;
-    --color2: rgb(10, 25, 30);
-    padding: 0.8em 1.75em;
-    background-color: transparent;
-    border-radius: 6px;
-    border: .3px solid var(--color);
-    transition: .5s;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    z-index: 1;
-    font-weight: 300;
-    font-size: 17px;
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
-    text-transform: uppercase;
-    color: var(--color);
-  }
-  
-  .btn::after, .btn::before {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    transform: skew(90deg) translate(-50%, -50%);
-    position: absolute;
-    inset: 50%;
-    left: 25%;
-    z-index: -1;
-    transition: .5s ease-out;
-    background-color: var(--color);
-  }
-  
-  .btn::before {
-    top: -50%;
-    left: -25%;
-    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-  }
-  
-  .btn:hover::before {
-    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-  }
-  
-  .btn:hover::after {
-    transform: skew(45deg) translate(-50%, -50%);
-  }
-  
-  .btn:hover {
-    color: var(--color2);
-  }
-  
-  .btn:active {
-    filter: brightness(.7);
-    transform: scale(.98);
-  }
-  
-  #formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    margin-top: 30px;
-}
-
-#formulario input {
-    padding: 10px;
-    width: 250px;
-    border-radius: 6px;
-    border: none;
-    font-size: 16px;
-}
-
-.mensagem {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    color: red;
-    min-height: 20px;
-}
-.mensagem.sucesso {
-    color: lightgreen;
-}
-
-.relogio {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #00ffcc;
-  background-color: #222;
-  padding: 15px 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #00ffcc;
-  margin-top: 30px;
-}
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 0;
+      }
+      
+      .hobbies, .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .contato input {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 250px;
+      }
+      .send-button {
+        background-color: #4266f5;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        font-size: 16px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        transition: background-color 0.3s;
+      }
+      
+      .send-button:hover {
+        background-color: #2f4cd6;
+      }
