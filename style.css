@@ -175,3 +175,23 @@
           12px 4px;
       }
     }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 100px;
+  }
+  .input:focus {
+    border-color: #4266f5;
+    outline: none;
+  }
