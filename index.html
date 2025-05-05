@@ -26,24 +26,41 @@
         </ul>
     </div>
 
+
+
     <!-- Contact section -->
     <div class="contato">
         <h2>Contato</h2>
-        <input type="text" placeholder="Enter your name"><br>
-        <input type="email" placeholder="Enter your e-mail"><br>
-        <input type="mensagem" placeholder="type your message"><br>
-        <button class="send-button">
+        <form
+        action="https://formspree.io/f/mqaqqkdr"
+        method="POST"
+      >
+        <label>
+          Your email:
+          <input type="email" name="email">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button class="send-button" type="submit">
             <i class="fas fa-paper-plane"></i> Send
         </button>
+      </form>
     </div>
 </div>
 
+
+
 <!-- Button to change the color -->
-<div onclick="mudarCor()">
+<div onclick="mudarCorDeFundo()">
     <button class="button">
         <div><span>Change the color</span></div>
     </button>
 </div>
+
+
 
 <!-- Checklist section -->
 <div class="container">
@@ -56,6 +73,9 @@
     </div>
     <ul id="lista"></ul>
 </div>
+
+
+
 
 <!-- Linking the JavaScript file -->
 <script src="script.js"></script>
