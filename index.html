@@ -3,74 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <h1>Kauã Covre Martins</h1>
-
-    <!--  Uma div é uma tag HTML usada para criar divisões ou seções em uma página web -->
-    <div class="conteudo">
-        <!-- Hobbies section -->
-        <div class="hobbies">
-            <h2>Hobbies</h2>
-            <!-- A tag <ul> em HTML significa "unordered list" (lista não ordenada) || <ol>: lista ordenada (usa números). -->
-            <ul>
-                <!-- A tag <li> em HTML significa "list item" (item de lista) -->
-                <li>Play the video Games</li>
-                <li>Watch Animes</li>
-                <li>Gym</li>
-                <li>Programming</li>
-                <li>Study</li>
-            </ul>
-        </div>
-
-        <!-- Contact section -->
-        <div class="contato">
-            <h2>Contato</h2>
-
-            <form action="https://formspree.io/f/mqaqqkdr" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="email" placeholder="Enter your email">
-                </label>
-
-                <label>
-                    Your message:
-                    <textarea name="message" placeholder="Type your message"></textarea>
-                </label>
-
-                <!-- your other form fields go here -->
-                <button class="send-button" type="submit">
-                    <i class="fas fa-paper-plane"></i> Send
-                </button>
-
-            </form>
-        </div>
+    <div class=".container">
+        <h1>este é um exemplo de H1</h1>
     </div>
-
-    <!-- Button to change the color -->
-    <div onclick="mudarCorDeFundo()">
-        <button class="button">
-            <div><span>Change the color</span></div>
-        </button>
-    </div>
-
-
-    <!-- Checklist section -->
-    <div class="container">
-        <h2>Checklist</h2>
-        <input type="text" id="tarefa" placeholder="Enter a task">
-        <div onclick="criarlista()">
-            <button class="button">
-                <div class="text">Create list</div>
-            </button>
-        </div>
-        <ul id="lista"></ul>
-    </div>
-
-    <!-- Linking the JavaScript file -->
-    <script src="script.js"></script>
 </body>
 </html>
