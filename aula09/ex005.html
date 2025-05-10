@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First pass DOM</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>leraning with <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Click here</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        d.style.background = 'blue'
+        d.style.color = 'white'
+        // d.innerText = "Loading..."
+        window.document.getElementById('msg').innerText = "Loading..." // opção 2
+        corpo.style.backgroundColor = 'antiquewhite'
+        p1.style.color = 'red'
+    </script>
+</body>
+</html>
