@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Where your from?</title>
+</head>
+<body>
+    <h1>Qual o seu País?</h1>
+    Coloque aqui seu País de origem <input type="text" name="txtpais" id="txtpais" placeholder="informe seu País">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var txtp = window.document.querySelector('#txtpais')
+            var res = window.document.querySelector('#res')
+            var pa = String(txtp.value)
+            res.innerHTML = `<p>Você é do(a) <strong>${pa}</strong>.</p>`
+            if (pa.toLowerCase() === "brasil") {
+                res.innerHTML += `<p>Portanto, você é Brasileiro.</p>`
+            }
+            else {
+                res.innerHTML += `<p>Portanto, você é estrangeiro(a).</p>`
+            }
+            res.innerHTML += `<p>Então, seja bem-vindo.</p>`
+        }    
+    </script>
+</body>
+</html>
