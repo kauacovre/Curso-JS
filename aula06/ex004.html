@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site</title>
-    <link rel="stylesheet" href="ex004.css">
+    <style>
+        body{
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+            font: 20px Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
     
-    <script src="ex004.js"></script>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        window.document.write(`Olá, <strong>${nome}!</strong>. Seu nome tem ${nome.length} letras!<br>`)
+        window.document.write(`Seu nome maiúsculo é <strong>${nome.toUpperCase()}</strong><br>`)
+        window.document.write(`Seu nome minúsculo é <strong>${nome.toLowwerCase()}</strong><br>`)
+    </script>
 </body>
 </html>
