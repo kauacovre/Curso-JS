@@ -5,15 +5,25 @@ function contador() {
     const res = document.getElementById('res')
     res.innerHTML = ''
 
-    if (inicio = '' || fim = '') {
-        window.alert('Digite um valor válido')
-    } while (inicio <= fim) {
+    
+    if (inicio == '' || inicio == String) {
+        res.innerHTML = `[ERROR] Você digitou um ou mais valores inválidos, tente novamente`
+        return
+    }
+    if (fim == '' || fim == String) {
+        res.innerHTML = `[ERROR] Você digitou um ou mais valores inválidos, tente novamente`
+        return
+    }
+    if (passo == 0) {
+        window.alert('Passo invalido, considerando PASSO = 1')
+        passo = 1
+    }
+    while (inicio <= fim) {
         res.innerHTML += `${inicio}  `
-        if (passo = passo) {
-            inicio = inicio + passo
-        } else {
-            inicio ++
-                }
+    if (passo = passo) {
+        inicio = inicio + passo
+    } else {
+        inicio ++
         }
-         
-}
+    }
+}     
