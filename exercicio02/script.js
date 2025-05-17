@@ -16,24 +16,30 @@ function verificar() {
             if (idade >= 0 && idade < 18) {
                 // menor
                 res.innerHTML += `Você é menor de idade`
+                // img.setAttribute('src', 'foto.png') - colocar imagem por JS
             } else if (idade < 65) {
                 // maior de idade
                 res.innerHTML += `Você é maior de idade`
+                // img.setAttribute('src', 'foto.png')
             } else {
                 // idoso
                 res.innerHTML += `Você é idoso`
+                // img.setAttribute('src', 'foto.png')
             }
         } else if (fsex[1].checked) {
             genero = 'Mulher'
             if (idade >= 0 && idade < 18) {
                 // menor
                 res.innerHTML += `Você é menor de idade`
+                // img.setAttribute('src', 'foto.png')
             } else if (idade < 65) {
                 // maior de idade
                 res.innerHTML += `Você é maior de idade`
+                // img.setAttribute('src', 'foto.png')
             } else {
                 // idoso
                 res.innerHTML += `Você é idoso`
+                // img.setAttribute('src', 'foto.png')
             }
         }
         res.style.textAlign = 'center'
