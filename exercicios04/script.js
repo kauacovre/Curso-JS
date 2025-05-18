@@ -1,13 +1,12 @@
 function calcular() {
-    var num = document.getElementById('txtnum')
-    var res = document.querySelector('#res')
-    var tabuada = 0
-    calculo = 0
-    res.innerHTML = ''
-
-    var num = Number(num.value)
-    while (tabuada <= 10) {
-        res.innerHTML += `${num} x ${tabuada} = ${num*tabuada} <br>`
-        tabuada++
+    let num = document.querySelector('input#txtnum')
+    let res = document.getElementById('res')
+    if (num.value.length == 0) {
+        res.innerHTML = '[ERROR] Digite um valor válido'
+    } else {
+        res.innerHTML = ''
+        let n = Number(num.value)
+        for (let t = 0; t <= 10; t++ )
+            res.innerHTML += `${n} x ${t} = ${n*t} <br>`
     }
 }
