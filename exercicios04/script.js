@@ -1,12 +1,18 @@
 function calcular() {
     let num = document.querySelector('input#txtnum')
-    let res = document.getElementById('res')
+    let tab = document.getElementById('seltab')
     if (num.value.length == 0) {
-        res.innerHTML = '[ERROR] Digite um valor válido'
+        alert('[ERROR] Digite um valor válido')
     } else {
-        res.innerHTML = ''
         let n = Number(num.value)
-        for (let t = 0; t <= 10; t++ )
-            res.innerHTML += `${n} x ${t} = ${n*t} <br>`
+        let c = 1
+        tab.innerHTML = ''
+        while (c <= 10) {
+            let item = document.createElement(`option`)
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
+        }
     }
 }
