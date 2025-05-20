@@ -1,8 +1,8 @@
-var horas = window.document.querySelector('#h')
-var datadia = new Date()
-var relogio = datadia.getHours()
-var imag = window.document.getElementById('imagem')
-var cor = document.querySelector('#back') 
+let horas = window.document.querySelector('#h')
+let datadia = new Date()
+let relogio = datadia.getHours()
+let imag = window.document.getElementById('imagem')
+let cor = document.querySelector('#back') 
 horas.innerHTML = `<p>Agora são <strong>${relogio} horas</strong></p>`
 
 if (relogio >= 0 && relogio <= 12) {
