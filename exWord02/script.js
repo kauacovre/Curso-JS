@@ -1,0 +1,22 @@
+// exercicio 04
+let a = 6*5 // 6*(3+2)
+let b = 2 + 6*(3+2)// 2+(6*(3+2))
+let c = 2 + 3*6 / (2+4) // 2+(3*6)/(2+4)
+let d = 8/(3+1)*2 // 2*(8/(3+1))
+let e = 2*(9-2)/(16-2)+3 // 3+(16-2)/(2*(9-2))
+let f = 6/3 + 8/2 // (6/3)+(8/2)
+let g = (8/2+3)*4 + 3*2 // ((3+(8/2))*4)+(3*2)
+let h = 3*3*6+6-10 // (6*(3*3)+6)-10
+let i = (10*8+3)*9 // (((10*8)+3)*9)
+let j = -12*-4 + 3*-4 // ((-12)*(-4))+(3*(-4))
+
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+console.log(e)
+console.log(f)
+console.log(g)
+console.log(h)
+console.log(i)
+console.log(j)
